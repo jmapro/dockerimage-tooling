@@ -6,3 +6,5 @@ Docker image with some tools for my every days activity
 - python3
 - pip3
 - azure-cli
+- vim
+- mariadb-client

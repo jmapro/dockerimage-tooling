@@ -5,7 +5,7 @@ FROM alpine:latest
 ENV PYTHONUNBUFFERED=1
 
 RUN \
-    apk add --update --no-cache curl tar openssl jq pigz python3 && \
+    apk add --update --no-cache curl tar openssl jq pigz python3 vim mariadb-client && \
     apk add --virtual=build gcc libffi-dev musl-dev openssl-dev make python3-dev && \
     python3 -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
